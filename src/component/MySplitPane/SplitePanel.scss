@@ -1,0 +1,43 @@
+.containerSplitPane {
+  display: grid;
+  grid-template-columns: 80px 1fr  3.5fr;
+
+  .horizontalLin,
+  .verticalLin {
+    position: absolute;
+    background-color: black;
+    display: block;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 2px;
+      background-size: 16px 2px;
+      background-position: 50% 50%;
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='15' cy='1' r='1' transform='rotate(90 15 1)' fill='%23C4C4C4'/%3E%3Ccircle cx='8' cy='1' r='1' transform='rotate(90 8 1)' fill='%23C4C4C4'/%3E%3Ccircle cx='1' cy='1' r='1' transform='rotate(90 1 1)' fill='%23C4C4C4'/%3E%3C/svg%3E");
+    }
+  }
+  .verticalLin {
+    width: 4px;
+    cursor: col-resize;
+    &:before {
+      left: -6px;
+      top: 50%;
+      transform: translateY(-50%) rotate(90deg);
+    }
+  }
+
+  .horizontalLin {
+    width: 100%;
+    height: 4px;
+    cursor: row-resize;
+    &:before {
+      top: 1px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+}
+
+

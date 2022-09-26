@@ -1,0 +1,159 @@
+.containerVideoStitching {
+  width: 100%;
+  overflow-Y: auto;
+  background-color: #222;
+  height: 100vh;
+  bottom: 50px;
+
+  .toolbarVideoStitching {
+    button {
+      margin-top: 10px;
+      background-color: transparent;
+      border: none;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+
+      svg {
+        fill: white;
+      }
+    }
+
+    button:nth-child(3),
+    button:nth-child(4),
+    button:nth-child(5) {
+      border: 1px solid white;
+      background-color: #4d4d4d;
+
+      svg {
+        margin-top: 3px;
+      }
+
+      &:hover {
+        background-color: #696969;
+      }
+    }
+
+    button:nth-child(1) {
+      margin-left: 15px;
+    }
+
+    button:nth-child(2) {
+      margin-left: 5px;
+    }
+
+    button:nth-child(3) {
+      margin-left: 70px;
+    }
+
+    button:nth-child(4) {
+      margin-left: 20px;
+    }
+
+    button:nth-child(5) {
+      margin-left: 50px;
+    }
+  }
+}
+
+.timelineFooter {
+  height: 52px;
+  background-color: #313131;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+
+  .timelineInputFooter {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+    .inputFooter {
+      background-color: #4d4d4d;
+      height: 30px;
+
+      input {
+        -webkit-appearance: none;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 5px;
+        margin-left: 5px;
+
+
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          height: 12px;
+          width: 12px;
+          border-radius: 50%;
+          background: white;
+          box-shadow: 0 0 2px 0 #555;
+          transition: background .3s ease-in-out;
+        }
+
+        &::-webkit-slider-runnable-track {
+          -webkit-appearance: none;
+          box-shadow: none;
+          border: none;
+          background: transparent;
+        }
+      }
+    }
+
+    button {
+      background-color: #4d4d4d;
+      width: 30px;
+      height: 30px;
+      border: none;
+      border-right: 1px solid #696969;
+
+      &:hover {
+        background-color: #656464;
+        cursor: pointer;
+      }
+
+      svg {
+        width: 18px;
+        fill: white;
+      }
+    }
+
+    button:last-child {
+      border-left: 1px solid #696969;
+    }
+  }
+
+  .timerFooter {
+    span:first-child {
+      color: #909090;
+    }
+
+    span:last-child {
+      color: white;
+    }
+  }
+
+  .btnPublishFooter {
+    background-color: #576fe9;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    height: 32px;
+    font-size: 18px;
+    line-height: 1;
+    font-family: system-ui;
+    color: white;
+    width: 100px;
+    margin-right: 30px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #99a4ea;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.mediaContentItem {
+  position: relative;
+  cursor: pointer;
+  width: 184px;
+  height: 112px;
+  margin: 10px;
+  text-align: center;
+
+
+  img {
+    width: 184px;
+    height: 112px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+  }
+
+  div {
+    color: white;
+    font-size: 13px;
+  }
+
+  .addMediaContentItem,
+  .deleteMediaContentItem {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+
+
+    svg {
+      color: #888888;
+      fill: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      svg {
+        color: #c7c0c0;
+      }
+    }
+  }
+
+  .deleteMediaContentItem {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .addMediaContentItem, {
+    margin-top: 10px;
+    margin-left: 155px;
+  }
+
+
+  .hideBlock {
+    display: none;
+  }
+}
+
+.hoverItemMediaContent {
+  img {
+    border-radius: 8px;
+    border: 2px solid white;
+  }
+}

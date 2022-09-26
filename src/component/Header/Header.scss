@@ -1,0 +1,93 @@
+.containerHeader {
+  background-color: var(--bgColor);
+  display: flex;
+  justify-content: space-between;
+  height: 55px;
+  border-bottom: 2px solid black;
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logoHeader {
+    img {
+      width: 33px;
+      margin-right: 15px;
+    }
+
+    div {
+      color: white;
+      font-size: 18px;
+    }
+  }
+
+  .inputHeader {
+
+    .input {
+      display: inline-block;
+      padding: 8px 14px;
+      line-height: 1;
+      border-radius: 3px;
+      outline: none;
+      color: white;
+      font-size: 18px;
+    }
+
+    .dropdownMenuChevronBox {
+      width: 14px;
+      height: 14px;
+      cursor: pointer;
+      margin-left: 4px;
+      justify-content: center;
+      margin-top: 10px;
+
+      .dropdownMenuChevron {
+        border-bottom: 2px solid #bdbdbd;
+        border-left: 2px solid #bdbdbd;
+        transform: rotate(-45deg);
+        transition: transform .25s;
+      }
+    }
+
+  }
+
+  .rightBlockHeader {
+    div {
+      margin-top: 3px;
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+      color: white;
+      font-size: 14px;
+      line-height: 16px;
+      height: 50px;
+      padding-right: 15px;
+      padding-left: 15px;
+      border-top-right-radius: 7px;
+      border-top-left-radius: 7px;
+
+      &:hover:nth-child(1),
+      &:hover:nth-child(2) {
+        background: #272626;
+        border-radius: 4px 4px 0 0;
+        cursor: pointer;
+      }
+
+      svg, img {
+        margin-right: 5px;
+      }
+    }
+
+  }
+
+  .pageSelection {
+    background-color: var(--bgColorHover);
+    border-bottom: 4px solid #576fe9;
+  }
+}
+
+.active{
+  color: red;
+}

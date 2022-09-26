@@ -1,0 +1,43 @@
+.modal {
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+
+  &__content {
+    position: absolute;
+    outline: none;
+  }
+}
+
+.modal__content {
+  width: max-content;
+  height: max-content;
+  background-color: #1a1a1a;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: white;
+}
+
+.onBlur {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0009;
+  z-index: 2;
+}
+
+
+.import-media-position {
+  top: 97px;
+}
+
+.header-media-position {
+  top: 47px;
+}

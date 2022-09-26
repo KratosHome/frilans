@@ -1,0 +1,16 @@
+.containerMediaImportModal {
+
+  .textMediaImportModal {
+    width: 180px;
+    font-size: 12px;
+    padding-left: 15px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+
+    &:hover {
+      color: #7486ef;
+      cursor: pointer;
+      transition: 500ms;
+    }
+  }
+}

@@ -1,0 +1,125 @@
+.containerPlayerControls {
+  background-color: var(--bgColor);
+  height: 50px;
+
+  .timelinePlayerControls {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #636363;
+    -webkit-appearance: none;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-top: -3px;
+    margin-bottom: 12px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: white;
+      cursor: pointer;
+    }
+  }
+
+  .currentTimePlayerControls {
+    color: #fff;
+    font-size: 16px;
+    width: 85px;
+  }
+
+  .buttonsPlayerControls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    button {
+      background-color: transparent;
+      border: none;
+      margin-right: 8px;
+      margin-left: 8px;
+      cursor: pointer;
+
+      .revert-icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .volumeControlsPlayer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: rotate(-90deg);
+    margin-top: -65px;
+    margin-left: -40px;
+    background-color: black;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+
+    &:after,
+    &:before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 5px;
+      background-color: rgba(114, 112, 112, 0.5);
+    }
+
+    &:after {
+      margin: 18px 0 0 0;
+    }
+
+    &:before {
+      margin: -18px 0 0 0;
+    }
+
+    input {
+      width: 90px;
+      height: 3px;
+      background-color: #576fe9;
+      -webkit-appearance: none;
+      outline: none;
+      opacity: 0.7;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: white;
+        cursor: pointer;
+      }
+
+      &::-ms-track {
+        background: transparent;
+        color: red;
+      }
+    }
+
+  }
+
+  .hideBlock {
+    display: none;
+  }
+}
+

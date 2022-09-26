@@ -1,0 +1,65 @@
+.containerChoiceSort {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  height: 23px;
+  width: 100%;
+  padding-right: 30px;
+
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: var(--hoverLink);
+    transition: 500ms;
+    cursor: pointer;
+  }
+
+
+  .media-sort__radio-checked {
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 9px;
+    height: 5px;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    transform: rotate(-45deg);
+    left: -20px;
+    top: -4px;
+  }
+
+  .media-sort__radio-checked-disabled {
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 9px;
+    height: 5px;
+    left: -20px;
+    top: -4px;
+  }
+
+}
+
+
+.disabledChoiceSort {
+  color: #4d4d4d;
+
+  &:hover {
+    color: #4d4d4d;
+    cursor: auto;
+  }
+
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+}
+
+
+
+
